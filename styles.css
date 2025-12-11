@@ -1,0 +1,75 @@
+:root{
+  --accent: #00c896;
+  --bg: #0b0b0c;
+  --card: #121214;
+  --text: #e9eef0;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+/* NAV */
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 28px;
+  background:rgba(0,0,0,0.45);
+  position:fixed;
+  inset:0 0 auto 0;
+  z-index:30;
+  backdrop-filter: blur(6px);
+}
+.nav .brand{font-weight:700;letter-spacing:1px}
+.nav .nav-links{display:flex;gap:16px}
+.nav .nav-links a{color:var(--text);opacity:0.95;text-decoration:none;padding:6px 8px;border-radius:6px;transition:background 180ms}
+.nav .nav-links a:hover{background:rgba(255,255,255,0.03)}
+.nav-toggle{display:none;background:none;border:0;color:var(--text);font-size:18px}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:70px}
+.hero-inner{display:flex;align-items:center;justify-content:space-between;gap:30px;max-width:1100px;margin:0 auto;padding:40px}
+.hero-text h1{font-size:42px;margin:0 0 8px}
+.tagline{opacity:0.8;margin:0 0 12px}
+.btn{display:inline-block;background:var(--accent);color:#001; padding:10px 16px;border-radius:8px;font-weight:600}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+.hero-image img{width:220px;height:220px;object-fit:cover;border-radius:50%;border:4px solid var(--accent);box-shadow:0 6px 30px rgba(0,200,150,0.12)}
+
+/* SECTIONS */
+.section{padding:72px 20px}
+.container{max-width:1100px;margin:0 auto}
+
+/* Cards & grids */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:var(--card);padding:18px;border-radius:12px}
+.tool-icons{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.tool{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:8px}
+
+/* timeline style */
+.journey{padding-left:22px}
+.journey li{margin:10px 0;padding-left:10px;border-left:2px solid rgba(255,255,255,0.04)}
+
+/* projects */
+.project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.project-card{background:var(--card);border-radius:10px;overflow:hidden}
+.project-card img{width:100%;height:160px;object-fit:cover}
+.card-body{padding:12px}
+
+/* footer */
+.footer{padding:28px 12px;background:#050505;text-align:center}
+
+/* responsive */
+@media (max-width:880px){
+  .hero-inner{flex-direction:column;text-align:center}
+  .nav .nav-links{display:none}
+  .nav-toggle{display:block}
+  body.menu-open .nav .nav-links{display:flex;position:fixed;inset:64px 12px auto 12px;flex-direction:column;background:#070707;padding:12px;border-radius:10px;z-index:40}
+}
+
+/* --- demo of at least 5 CSS properties in use: 
+   object-fit, border-radius, box-shadow, backdrop-filter, grid-template-columns
+*/

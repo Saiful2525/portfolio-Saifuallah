@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saifuallah – Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">Saifuallah</div>
+    <div class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#services">Services</a>
+      <a href="#tools">Tools</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="toggle menu" onclick="document.body.classList.toggle('menu-open')">
+      <i class="fa fa-bars"></i>
+    </button>
+  </nav>
+
+  <header id="hero" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Hello, I'm <strong>Saifuallah</strong></h1>
+        <p class="tagline">3D Creator • Tech Explorer • Future Web Developer & Prompt Engineer</p>
+        <p class="cta">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </p>
+        <p class="micro">LinkedIn: <a href="https://www.linkedin.com/in/saifullah-md-834492281/" target="_blank">/in/saifullah-md-834492281</a></p>
+      </div>
+      <div class="hero-image">
+        <img src="profile.png" alt="Saifuallah profile">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I’m <strong>Saifuallah bin Mohamed Sarwan</strong>. I blend visual creativity and technical curiosity — designing, exploring new tech and building experiences. I’m currently focused on becoming a Web Developer, Content Creator and Prompt Engineer.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience">
+      <div class="container">
+        <h2>My Experience</h2>
+        <ul>
+          <li><strong>3D & Visual Design</strong> — Concepting and producing 3D renders and environment visuals for clients and personal projects.</li>
+          <li><strong>Front-end Development</strong> — Building responsive layouts using HTML/CSS and practicing JavaScript fundamentals.</li>
+          <li><strong>Community Projects</strong> — Participated in FreeCodeCamp projects and collaborative community teaching efforts.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>My Services</h2>
+        <div class="grid">
+          <div class="card"><h3>Web Development</h3><p>Responsive sites, UI layouts, landing pages and components.</p></div>
+          <div class="card"><h3>3D & Visualization</h3><p>High-quality 3D mockups and visual storytelling for proposals.</p></div>
+          <div class="card"><h3>Content Creation</h3><p>Short-form content, tutorials and demos showcasing tools and techniques.</p></div>
+          <div class="card"><h3>Prompt Engineering</h3><p>Crafting prompts and pipelines to reliably generate design assets.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section tools">
+      <div class="container">
+        <h2>My Tools</h2>
+        <p>Examples of tools I use: <strong>VS Code</strong>, <strong>Figma</strong>, <strong>Blender</strong>, <strong>Three.js</strong>, <strong>Git & GitHub</strong>, <strong>ChatGPT</strong>.</p>
+        <div class="tool-icons">
+          <span class="tool">VSCode</span>
+          <span class="tool">Figma</span>
+          <span class="tool">Blender</span>
+          <span class="tool">Three.js</span>
+          <span class="tool">Git</span>
+          <span class="tool">ChatGPT</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="section timeline">
+      <div class="container">
+        <h2>My Journey Timeline</h2>
+        <ol class="journey">
+          <li><strong>2020</strong> — Started experimenting with 3D tools and basic web design.</li>
+          <li><strong>2022</strong> — Joined FreeCodeCamp & completed HTML/CSS projects.</li>
+          <li><strong>2024</strong> — Built 3D renders and small interactive demos; focused on design + code workflows.</li>
+          <li><strong>2025</strong> — Actively learning JavaScript, Three.js and prompt engineering; building portfolio.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="https://via.placeholder.com/600x350" alt="">
+            <div class="card-body"><h3>3D Visual Project</h3><p>Environment design & render.</p></div>
+          </article>
+          <article class="project-card">
+            <img src="https://via.placeholder.com/600x350" alt="">
+            <div class="card-body"><h3>Landing Page</h3><p>Product landing and UI experiments.</p></div>
+          </article>
+          <article class="project-card">
+            <img src="https://via.placeholder.com/600x350" alt="">
+            <div class="card-body"><h3>Interactive Demo</h3><p>Small interactive widgets and code experiments.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Let's collaborate — message me on LinkedIn or send an email.</p>
+        <p class="contact-links">
+          <a class="btn" href="https://www.linkedin.com/in/saifullah-md-834492281/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a class="btn ghost" href="mailto:saifualah@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Saifuallah • Built with curiosity.</p>
+    </div>
+  </footer>
+
+  <script>
+    // small helper to make internal menu usable on mobile
+    document.addEventListener('click', function(e){
+      if(e.target && e.target.matches('.nav-links a')) document.body.classList.remove('menu-open');
+    });
+  </script>
+</body>
+</html>
