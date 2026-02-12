@@ -1,0 +1,15 @@
+meta {
+  name: Add new products
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://product-inventory.test/api/Product
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Get a specific product
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://product-inventory.test/api/{id}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
