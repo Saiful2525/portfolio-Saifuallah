@@ -1,0 +1,53 @@
+TUGASAN_SAIFUALLAH B. MD. SARWAN : (GET /posts/recent) 
+
+🖥️  TERMINAL VERIFICATION 
+
+PS D:\Users\Lenovo\Desktop\tugasan-saifullah>              
+   php artisan route:list | findstr "posts.recent"           
+                                                               
+   🟢  GET|HEAD    posts/recent                               
+       └─ Controller: PostController@recent                  
+                                                               
+   ✅ ROUTE BERJAYA DIDAFTARKAN!  
+
+
+🌐 BROWSER TESTING - LIVE DEMO  
+
+📍 URL: http://localhost:8000/posts/recent                 
+   📍 METHOD: GET                                            
+   📍 STATUS: 200 OK ✅ 
+
+{
+  "success": true,
+  "message": "Route /posts/recent berjaya!",
+  "task": "#16 - Saifullah"
+}
+
+SCREENSHOT ASAL: [localhost-1.png]  
+
+Rumusan Tugasan
+
+✅ ROUTE:    /posts/recent ✔️                         
+✅ METHOD:   GET ✔️                                      
+✅ CONTROLLER: PostController@recent ✔️                 
+✅ RESPONSE: JSON ✔️                                   
+✅ STATUS:   200 OK ✔️                                 
+✅ TASK #16:  BERJAYA 100% ✔️ 
+
+👨‍🎓 MAKLUMAT PELAJAR: 
+
+🎓 NAMA    : SAIFULLAH                             
+   NO TASK : #16                                        
+  📧 EMAIL   : fdsstudio583@gmail.com                      
+  📅 TARIKH  : 14 FEBRUARI 2026                          
+  ⏰ MASA    : 12:00 pm
+
+ "Syukur Alhamdulillah, tugasan #16 telah berjaya disiapkan.  
+  Proses ini mengajar saya tentang Laravel routing, debugging,  
+  dan yang paling penting - kesabaran dalam menyelesaikan       
+  masalah teknikal. Terima kasih kepada pensyarah dan rakan-    
+  rakan atas tunjuk ajar."           
+
+                   
+                                  
+   

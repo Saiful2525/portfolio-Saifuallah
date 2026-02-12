@@ -1,0 +1,4 @@
+[2026-02-12 06:41:21] local.ERROR: Cannot declare class App\Http\Controllers\PostController, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class App\\Http\\Controllers\\PostController, because the name is already in use at D:/Users/Lenovo/Desktop/tugasan-saifullah/app/Http/Controllers/Controller.php:7)
+[stacktrace]
+#0 {main}
+"} 

@@ -1,0 +1,21 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// ===========================================
+// TUGASAN #16 - SAIFULLAH
+// ===========================================
+Route::get('/posts/recent', [PostController::class, 'recent'])
+     ->name('posts.recent');
+// ===========================================
